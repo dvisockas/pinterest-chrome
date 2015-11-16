@@ -1,12 +1,15 @@
 {
-  "name": "__MSG_appName__",
-  "version": "0.0.2",
+  "name": "Pinner",
+  "version": "0.0.1",
   "manifest_version": 2,
-  "description": "__MSG_appDescription__",
+  "description": "Helping you pin faster",
   "icons": {
     "16": "images/icon-16.png",
-    "128": "images/icon-128.png"
+    "128": "images/pinterest.png"
   },
+  "web_accessible_resources": [
+    "images/*.png"
+  ],
   "default_locale": "en",
   "background": {
     "scripts": [
@@ -14,9 +17,13 @@
       "scripts/background.js"
     ]
   },
+  "permissions": [
+    "tabs",
+    "https://pinterest.com/*"
+  ],
   "content_scripts": [
     {
-      "matches": ["https://*.github.com/*"],
+      "matches": ["*://*/*"],
       "css": ["styles/clothes.css"],
       "js": ["scripts/brain.js"]
     }

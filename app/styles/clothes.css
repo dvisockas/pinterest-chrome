@@ -1,3 +1,45 @@
-.dwarf {
-  height: 40px;
+#pinterest {
+  height: 0;
+  width: 0;
+}
+
+#pinterest-picture {
+  position: fixed;
+  right: 10px;
+  bottom: 120px;
+  width: 200px;
+  z-index: 200;
+  border: 2px solid #bd081c;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.pop, .visible {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  animation: pop .45s;
+  -webkit-animation-iteration-count: 1;
+  height: 100px !important;
+  width: 100px !important;
+  z-index: 99;
+}
+
+.hidden {
+  display: none;
+}
+
+@-webkit-keyframes pop {
+    0%   {
+      height: 0;
+      width: 0;
+    }
+    70% {
+      height: 110px;
+      width: 110px;
+    }
+    80% {
+      height: 100px;
+      width: 100px;
+    }
 }
