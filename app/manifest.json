@@ -25,7 +25,7 @@
     {
       "matches": ["*://*/*"],
       "css": ["styles/clothes.css"],
-      "js": ["scripts/brain.js"]
+      "js": ["scripts/brain.js", "scripts/pdk.js"]
     }
   ]
 }
